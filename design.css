@@ -1,18 +1,24 @@
-* {
+/** {
   border: 1px solid red;
-}
+}*/
 
 body{
   margin-left: auto;
   margin-right: auto;
   background-color: #fffae0;
 }
-div.page{
+
+div#head.front figure{
+  width: 960px;
+  height: 336px;
+}
+
+div.front{
   padding: 5px;
   margin-left: 100px;
 }
 
-div.page#header h1{
+div.front#head h1{
   font-family: "Copperplate Gothic Light";
   text-align: center;
   font-size: 60px;
@@ -21,12 +27,12 @@ div.page#header h1{
   margin-left: 200px;
   margin-right: 200px;
 }
-div.page#header figure{
+div.front#head figure{
   width: 960px;
   margin-right: auto;
   margin-left: auto;
 }
-div.page p{
+div.front p{
   text-align: justify;
   font-size: 25px;
   color: #0d5eaf;
@@ -40,17 +46,25 @@ div#nav.site{
   left: 0;
   top: 0;
   background: rgba(13, 94, 175,.5);
-}
 
-div#nav.site a:link, a:visited {
-    background-color: rgba(13, 94, 175,.5);
+}
+a {
+    background-color: rgb(13, 94, 175);
     color: white;
-    padding: 14px 25px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    width: 50px;
+    font-size: 12px;
+    width: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: white 1px solid;
+    border-radius: 2px;
 }
-div#nav.site a:hover, a:active {
-    background-color: red;
+a:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
